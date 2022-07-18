@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus
+{
+  outline: none;
+}
+.rodape
+{
+    display: none;
+}
+body
+{
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+}
+p{
+ margin: auto;
+}
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color:#fff ;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    z-index: 2;
+}
+.nav-capsula
+{
+    width: 70%;
+    max-width: 1366px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logomarca
+{
+    display: flex;
+}
+.logo-instagram
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insta-logo
+{
+    border-right: 1px solid #dfdfdf;
+    margin: 0;
+    padding-right: 10px;
+}
+.logo-img
+{
+    
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+.caixa-pesquisa
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 215px;
+    height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.caixa-pesquisa::placeholder
+{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ion-icon
+{
+   font-size: 26px;
+   cursor: pointer;
+   margin: 0 10px;
+   display: inline-block;
+  
+}
+.content
+{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.capsula
+{
+    width: 70%;
+    max-width: 1366px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+}
+.coluna-esquerda
+{ 
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+}
+.storie-capsula
+{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 10px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto; 
+    box-sizing: border-box;
+}
+.storie-capsula::-webkit-scrollbar
+{
+    display: none;
+    
+}
+.seta
+{
+    
+    z-index: 1;
+    margin-left: 570px;
+    position: absolute;
+    color: white;
+}
+.seta img
+{
+    border-radius: 50%;
+    -webkit-box-shadow: 9px 7px 5px rgba(102, 101, 101, 0.651);
+		-moz-box-shadow:    9px 7px 5px rgba(102, 101, 101, 0.651);
+		box-shadow:         9px 7px 5px rgba(102, 101, 101, 0.651);
+}
+
+.storie-card
+{
+    position: relative;
+    flex: 0 0 auto;
+    width: 80px;
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.storie-card img
+{
+    width: 80%;
+    height: 80%;
+}
+.storie-card p
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #262626;
+    text-overflow: ellipsis
+}
+.perfil-img
+{
+   padding: 4px;
+   width: 80%;
+   position: absolute;
+   
+}
+.perfil-img img
+{
+    width: 100%;
+    height: 100%;    
+}
+.post
+{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #dfdfdf;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.info
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.info .username
+{
+    width: auto;
+    font-weight: bold;
+    color: #262626;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+.opcoes
+{
+    font-size: 16px;
+}
+
+.info .user
+{
+    display: flex;
+    align-items: center;
+}
+.perfil-pic img
+{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: none;
+}
+.post-img
+{
+    width: 100%;
+    object-fit: cover;
+}
+.post-conteudo
+{
+    width: 100%;
+    padding: 20px;
+    justify-content:left;
+    
+}
+.post-conteudo p
+{
+    margin: 0px;
+}
+.post-conteudo span
+{
+    font-weight: bold;
+}
+ion-icon[name="heart"] {
+    color: red;
+}
+.curtidas
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+}  
+.curtidas img
+{
+   margin-right: 5px; 
+   width: 25px;
+}  
+.comentario
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px solid #bfbfbf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comentario .smile
+{
+    font-size: 22px;
+    margin-left: 20px;
+    color: gray;
+}
+.caixa-comentario
+{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.btn-comentario
+{
+    height: 100%;
+    width: 80px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #B2DFFC;
+    cursor: pointer;
+}
+.btn-comentario:hover
+{
+  transition: color 0.3s ease-in;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  color: #0095F6;
+}
+.reacoes
+{
+    height: 50px;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+}
+.reacoes ion-icon
+{
+    font-size: 24px;
+    margin: 0;
+    margin-right: 20px;
+}
+.reacoes .salvar
+{
+    margin-left: auto;
+    margin-right: 0;
+}
+.coluna-direita
+{   
+    max-width: 293px;
+    padding: 20px;
+    
+    position: fixed;
+    left: 829px;
+    right: 216px;
+    
+}
+.perfil-card
+{
+    display: flex;
+    width: 293px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.perfil-img2 img
+{
+    flex: 0 0 auto;
+    padding: 0;
+    background: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+
+}
+.perfil-card:first-child 
+{
+    justify-content:flex-start
+}
+.perfil-card:first-child .perfil-img2 img
+{
+    width: 56px;
+    height: 56px;
+}
+.perfil-card .username
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: #262626;
+}
+.subtitulo
+{
+    color: #8E8E8E;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 5px;
+}
+.btn-seguir
+{
+    height: 100%;
+    width: 80px;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #139EF2; 
+    cursor: pointer;
+    
+    margin-left: auto;
+}
+.sidetitles
+{
+    width: 293px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sugestao
+{
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #8E8E8E;
+    
+    margin: 18px;
+    margin-left: 0;
+}
+.ver-tudo
+{
+
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: right;
+margin-right: 20px;
+
+}
+.tags
+{
+    width: 300px;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 18px;
+
+}
+.tags p
+{
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+     display: flex;
+     align-items: center;
+     color: #C7C7C7;
+
+}
+.copy
+{
+ font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+color: #C7C7C7;
+}
+@media(max-width: 935px)
+{
+    .coluna-direita
+    {
+        display: none;
+    }
+    .insta-logo
+    {
+        margin: 0 10px;
+    }
+    .nav-capsula
+    {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .capsula
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+ }
+  
+   
+    @media(max-width: 614px)
+{
+    .seta
+    {
+        display: none;
+        color: white;
+    }
+    .logomarca
+    {
+        display: flex;
+        width: 60%
+    }
+    .logo-instagram {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;}
+        .esconde 
+        {
+            display: none;
+        }
+        .caixa-pesquisa
+        {
+            display: none;
+        }
+        .insta-logo 
+        {
+            border: none;
+            margin: 0 10px;
+            padding-right: 10px;
+        }
+        .logo-img {
+            margin-top: 5px; 
+            margin-left: auto;
+        }
+        .content {
+            width: 100%;
+            padding: 0;
+            margin-top: 50px;
+        }
+        .storie-capsula
+        {
+            border: none;
+        }
+        .post
+        {
+            
+            left: 0;
+            margin: 0;
+            width: 100%;
+            box-sizing: 100%;
+            resize: both;
+            
+            
+            margin-bottom: 60px;
+        }
+        .rodape
+        {
+            display: initial;
+            position: fixed;
+            
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #dfdfdf;
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+            z-index: 2;
+            bottom: 0;
+        }
+        .rodape-capsula
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    
+}
+}
